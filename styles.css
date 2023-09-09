@@ -32,7 +32,7 @@ img {
     background-color: #6c2431; /* Background color */
     margin: 20% auto; /* Center-align the container with a top margin of 20% */
     margin-bottom: 5%; /* Add space at the bottom */
-    line-height: 1.5; /* Set line height for text */
+    line-height: 1; /* Set line height for text */
     border-radius: 5%; /* Apply a slight border radius */
 }
 
