@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <title>My Personal Data</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Link to Font Awesome CSS -->
+</head>
+<body>
+    
+    <div class="main">
+        <h1 class="head" data-testid="slackUserName">Emmanuel Chibuzor</h1>
+        <!-- Heading with a data-testid attribute for testing -->
+        <img src="images/slack.jpg" alt="Emmanuel Chibuzor slack pic" data-testid="slackDisplayImage">
+        <!-- Image with a data-testid attribute for testing -->
+        <p data-testid="currentDayOfTheWeek"></p>
+        <!-- Empty paragraph with a data-testid attribute for testing -->
+        <p class="text" data-testid="currentUTCTime"></p>
+        <!-- Paragraph with a class and a data-testid attribute for testing -->
+        <p class="text" data-testid="myTrack">My Track: FrontEnd</p>
+        <!-- Paragraph with a class and a data-testid attribute for testing -->
+        <a class="link" href="https://github.com/Daminert/myPersonalData.git" data-testid="githubURL">
+            <!-- Anchor link with a class and a data-testid attribute for testing -->
+            <i class="fab fa-github"></i> GitHub Repository
+            <!-- Font Awesome GitHub icon followed by text -->
+        </a>
+        
+        <script>
+        const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+        function updateClock() {
+            const currentDate = new Date();
+            const dayOfWeek = daysOfWeek[currentDate.getUTCDay()];
+            const utcTime = currentDate.getTime(); // Get time in milliseconds
+
+            document.querySelector('[data-testid="currentDayOfTheWeek"]').textContent = `Current Day: ${dayOfWeek}`;
+            document.querySelector('[data-testid="currentUTCTime"]').textContent = `Current UTC Time (milliseconds): ${utcTime}`;
+        }
+
+        // Update the clock every second
+        setInterval(updateClock, 1000);
+        
+        // Initial call to set the clock
+        updateClock();
+        </script>
+    </div>
+</body>
+</html>

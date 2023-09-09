@@ -1,0 +1,53 @@
+/* styles.css */
+
+/* Apply box-sizing to all elements to include padding and borders in width calculations */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Styles for the entire webpage body */
+body {
+    font-family: Arial, sans-serif; /* Set the font family */
+    text-align: center; /* Center-align text */
+    width: 100%; /* Take up the full width of the viewport */
+    height: auto; /* Automatically adjust the height based on content */
+    background-color: #7f203f; /* Background color */
+    color: whitesmoke; /* Text color */
+}
+
+/* Styles for images */
+img {
+    max-width: 200px; /* Limit image width */
+    height: auto; /* Maintain image aspect ratio */
+    border-radius: 100%; /* Apply a circular border */
+}
+
+/* Styles for the main container */
+.main {
+    border: collapse; /* Collapse borders */
+    width: 90%; /* Take up 90% of the parent container's width */
+    height: auto; /* Automatically adjust the height based on content */
+    background-color: #6c2431; /* Background color */
+    margin: 20% auto; /* Center-align the container with a top margin of 20% */
+    margin-bottom: 5%; /* Add space at the bottom */
+    line-height: 1.5; /* Set line height for text */
+    border-radius: 5%; /* Apply a slight border radius */
+}
+
+/* Styles for headings and text paragraphs */
+.head, .text {
+    margin: 7% 0 10%; /* Add margins for spacing */
+}
+
+/* Styles for links */
+.link {
+    text-decoration: none; /* Remove underline from links */
+    color: whitesmoke; /* Link text color */
+}
+
+/* Styles for link hover state */
+.link:hover {
+    color: blanchedalmond; /* Change link text color on hover */
+}
