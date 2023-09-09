@@ -39,7 +39,7 @@ img {
 /* Styles for headings and text paragraphs */
 .head, .text,.link{
     margin: 7% 0 10%; /* Add margins for spacing */
-    font-size: 3.5rem;
+    font-size: 3.0rem;
 }
 
 /* Styles for links */
