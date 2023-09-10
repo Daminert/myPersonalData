@@ -35,8 +35,8 @@
             const dayOfWeek = daysOfWeek[currentDate.getUTCDay()];
             const utcTime = currentDate.getTime(); // Get time in milliseconds
 
-            document.querySelector('[data-testid="currentDayOfTheWeek"]').textContent = ${dayOfWeek};
-            document.querySelector('[data-testid="currentUTCTime"]').textContent = `Current UTC Time (milliseconds): ${utcTime}`;
+            document.querySelector('[data-testid="currentDayOfTheWeek"]').textContent = `${dayOfWeek}`;
+            document.querySelector('[data-testid="currentUTCTime"]').textContent = `${utcTime}`;
         }
 
         // Update the clock every second
